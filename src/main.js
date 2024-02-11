@@ -1,4 +1,3 @@
-// Create variables targetting the relevant DOM elements here 👇
 var coverImage = document.querySelector(".cover-image");
 var coverTitle = document.querySelector(".cover-title");
 var coverTag1 = document.querySelector(".tagline-1");
@@ -15,14 +14,9 @@ var descriptorInputBox2 = document.querySelector(".user-desc2");
 var formView = document.querySelector(".form-view");
 var newBookButton = document.querySelector(".create-new-book-button");
 var savedCoversSection = document.querySelector(".saved-covers-section")
-
-
-
-// We've provided a few variables below
 var savedCovers = [];
 var currentCover;
 
-// Add your event listeners here 👇
 document.addEventListener("DOMContentLoaded", getRandomNovel);
 randCoverButton.addEventListener("click", getRandomNovel);
 makeCoverButton.addEventListener("click", makeCover);
@@ -34,9 +28,6 @@ viewSavedCovers.addEventListener('click', function() {
   displaySavedCovers();
 });
 
-
-
-// Create your event handlers and other functions here 👇
 function makeCover() {
   document.querySelector(".form-view").classList.remove("hidden");
   document.querySelector(".home-view").classList.add("hidden");
@@ -71,7 +62,6 @@ function changeFormView() {
   document.querySelector(".home-view").classList.toggle("hidden");
 }
 
-// We've provided two functions to get you started
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
